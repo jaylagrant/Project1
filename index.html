@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grant Paper</title>
+
+    <style>
+
+        /*   * set's rules for the entire page    */
+        * {
+            box-sizing: border-box; /*This line makes sure the width and height are the correct sizes no matter the padding */
+            font-family: "Times New Roman", Monaco, monospace;
+        }
+
+        /*Selecting elements with the id attribute*/
+        .outline{
+            border: .5px solid black;
+        }
+
+        /*this is the CSS that styles a grid-container div, initially it's not being used. To use it create a new div with class="grid-container" and place all your rows and content inside it*/
+        .grid-container{
+            width: 100%;
+            max-width: 1260px;
+            margin:auto ;/* this line makes sure the container div is centered */
+        }
+
+        .row{
+            overflow:auto;
+            background-color: white;
+            margin: 0px
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 12.5%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+
+        .secA{
+            height: 850px ;
+            border: .5px solid black;
+
+        }
+        .secB{
+            height: 850px ;
+            border: .5px solid black;
+
+        }
+        .secC{
+            height: 700px ;
+            border: .5px solid black;
+        }
+        .secD{
+            height: 700px ;
+            border: .5px solid black;
+
+        }
+        .header{
+            width:100%;
+            padding: 0px;
+            background: white;
+        }
+
+
+        /*Selecting based off wildcard strings*/
+
+        [class*='col-'] { /* This css rule applies to any element that has the string "col-" in its class*/
+            float: left;
+            min-height: 1px;
+            /*-- our gutter inside each cell around it's content, change the value to see how it works--*/
+            padding: 10px;
+            /**********Another way to set background color: Change the number values in it and see what happens**********/
+            background: whitesmoke;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+</head>
+<body>
+<div class=" grid-container">
+    <div class="header outline">
+        <div class="row ">
+            <div class="col-4 begin" style="height:100px" ><h4>March 2017</h4><p>Volume I Issue I</p></div>
+            <div class="col-4 begin" style="height:100px"><h1>The Grant<br></h1></div>
+            <div class="col-4 begin" style="height:100px"><h4>Check TheGrantPaper.com</h4><p>for the newest updates</p></div>
+        </div>
+        <div class="row">
+            <div class="col-2"><h3><a href="EmptyGrid.html" style="color:black; text-decoration:none">GRID</a></h3></div>
+            <div class="col-2"><h3><a href="CloudComputing.html" style="color:black; text-decoration:none">CLOUD</a></h3></div>
+            <div class="col-2"><h3><a href="https://image.issuu.com/120614021555-52cc0f70bd9142ec9e190c776207ae79/jpg/page_1.jpg" style="color:black; text-decoration:none">PAPER</a></h3></div>
+            <div class="col-2"><h3>COLLEGES</h3></div>
+            <div class="col-2"><h3>IN FOCUS</h3></div>
+            <div class="col-2"><h3>ENTERTAIN</h3></div>
+            <div class="col-2"><h3>LIFESTYLE</h3></div>
+            <div class="col-2"><h3>SPORTS</h3></div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-3 secA">
+                <h2><u>Improvements in Brain Computer Interfaces</u></h2>
+                <p style="text-align: left;">Dennis Degray&rsquo;s life changed when he fell while taking out the trash. The event led to him being paralyzed below the neck. He is a participant in an experiment that helps people with paralysis type words using only their thoughts.</p>
+                <p style="text-align: left;">Brain Computer interfaces (BCIs) are promising to restore function to people with disabilities. With that many new strides towards improvement have been made. According to Dr. Henderson, a neurosurgeon at Stanford University, believes that the speed of typing with their thoughts is increasing and approaching half of what people can type on a cell phone.</p>
+                <p style="text-align: left;">Performance is measured in three tasks. Free typing is when questions are answered using the BCI. Copy typing, involves typing out set phrases. The con of copy typing is performance can vary with specific phrases and keyboard layout used. The third task involves selecting squares on a six by six grid as they light up randomly. This range of tasks are used because the goal is to develop standardized measures.</p>
+                <p style="text-align: left;">The team is already investigating into what is next. They hope that someday wireless technology will be a contributing factor. They vision that one day, they would be able to plug a wireless receiver into any computer and use it using the brain.&nbsp;</p>
+               <br>
+                <br>
+                <p><strong>To see more click <a href="https://www.scientificamerican.com/article/brain-computer-interface-allows-speediest-typing-to-date/">here</a></strong></p>
+            </div>
+            <div class="col-9 secB">
+                <h2><u>Come Up Areas In Artifical Intelligence</u></h2>
+                <p><img src="https://3.bp.blogspot.com/-jJztLpPT_i0/WLtNer9l9wI/AAAAAAABTdk/Abu8jYEuDcU18YUMzicPwrzSDreHI22xwCLcB/s640/Forrester-AI-technologies.jpg" width="450" height="450"
+                <br>
+                <p><em><strong>Interest in Artificial Intelligence </strong></em>(AI) is booming. Worldwide Semiannual Cognitive/Artificial Intelligence Systems Spending Guide from International Data Corporation predicts the market for cognitive/artificial intelligence solutions will experience a compound annual growth rate (CAGR) of 55.1% over the 2016-2020 forecast period. Cognitive systems have the opportunity to extend its usefulness in industries such as banking, securities and investments, and manufacturing. These technologies are being used in the banking industry to detect and combat fraud and in manufacturing the systems recognize and know how to respond to dynamic fluctuations in predict specs by adapting the production to stay within quality targets.</p>
+                <p>The most talked about Artificial Intelligence includes:</p>
+                <ol>
+                    <li>Natural Language Generation: Producing text from computer data which is seen in customer service (i.e Automated Insights)</li>
+                    <li>Speech Recognition: Transcribing and translating human speech in format useful for computer applications. (I.e. Siri)</li>
+                    <li>Virtual Agents: Systems that can network with humans. (i.e. Alexa, Google Home)</li>
+                    <li>Machine Learning Platforms: Providing Algorithms to design, train and deploy models into applications, processes and other machines. Used mostly for involving prediction or classification. (i.e. Amazon, Intel)</li>
+                </ol>
+                <p><strong>To see more click
+                    <a href="http://www.nextbigfuture.com/2017/03/hottest-areas-in-artificial-intelligence.html">http://www.nextbigfuture.com/2017/03/hottest-areas-in-artificial-intelligence.html</a></strong></p>
+            </div>
+            <div class="col-3 secC ">
+                <h2><u>3D Housing</u></h2>
+                <p style="text-align: left;">The first house printed using mobile 3D printing technology has been built in Russia. This occurred in December of 2016. Printing of self-bearing walls, partitions and building envelope were done in less than a day. The machine time of printing amounted to 24 hours. This was the first time in Russian construction where a house was printed as a whole rather than pieces.</p>
+                <p style="text-align: left;">The construction cost of the printed house amounted to $10,134 dollars which is approximately $275 per square meter. The cost includes everything that was needed to complete the house: work/materials for the construction of the foundation, roof, exterior and interior finishing works, installation of heat insulation of walls, windows, floors and ceilings.</p>
+                <p><strong>Click <a href="http://www.3dprintingprogress.com/articles/10683/the-first-on-site-house-has-been-printed-in-russia">here</a> for more and watch below</strong></p>
+                <p><iframe width="250" height="160" src="https://www.youtube.com/embed/xktwDfasPGQ" frameborder="0" allowfullscreen></iframe></p>
+            </div>
+            <div class="col-9 secD">
+                <h2><u>Internet of Things with Mobile Technology</u></h2>
+                <p>Senior Vice President of product management at Qualcomm Technologies, Inc., Raj Talluri, holds 13 US patents and was chosen to be on the list as one of the 100 Most Creative People in Business. Qualcomm has shipped more than a billion chips for IoT. Most are being used by Indian companies. One processor powers the world&rsquo;s first connect mobility platform for ride-sharing in Indian cabs. The Internet of things is the inter-networking of physical devices, vehicles, buildings and other items that enable these objects to collect and exchange data</p>
+                <p>Raj Talluri speaks about how IoT is expected to offer advanced connectivity of devices, systems and services that goes beyond machine to machine communications and covers a variety of protocols, domains, and applications. The interconnection of these embed devices is expected to usher in automation in nearly all fields, while also enabling advanced applications like a smart grid, and expanding to areas.</p>
+                <p>Talluri says that interoperability across different brands is a key requirement for IoT to develop. Systems are being developed to help devices and apps across multiple ecosystems communicate to each other. Security is important, in order to maximize security, they use their extensive expertise and IP which has been used in mobile phones.</p>
+                <p>All this to say, there are some new developments to look forward including the roll out of 5G which will help create stability for IoT.&nbsp;</p>
+                <p><strong>To see more click below <br>
+                    <a href="http://www.livemint.com/Companies/JwUa5Xgan7mpa3RRnP53dO/Mobile-technology-will-drive-Internet-of-Things-Raj-Tallur.html">http://www.livemint.com/Companies/JwUa5Xgan7mpa3RRnP53dO/Mobile-technology-will-drive-Internet-of-Things-Raj-Tallur.html</a></strong></p>
+            </div>
+</body>
+</html>
+</body>
+</html>

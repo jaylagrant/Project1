@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cloud Computing</title>
+
+        <style>
+
+            /*   * set's rules for the entire page    */
+            * {
+                box-sizing: border-box; /*This line makes sure the width and height are the correct sizes no matter the padding */
+                font-family: "Times New Roman", Monaco, monospace;
+            }
+
+            /*Selecting elements with the id attribute*/
+            .outline{
+                border: .5px solid black;
+            }
+
+            /*this is the CSS that styles a grid-container div, initially it's not being used. To use it create a new div with class="grid-container" and place all your rows and content inside it*/
+            .grid-container{
+                width: 100%;
+                max-width: 1260px;
+                margin:auto ;/* this line makes sure the container div is centered */
+            }
+
+            .row{
+                overflow:auto;
+                background-color: white;
+                margin: 10px
+            }
+
+            .testImg, .testImg2{
+                width: 100%;
+            }
+
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 12.5%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+            .secE{
+                align-self: center;
+                vertical-align: top;
+                float:left;
+            }
+
+            .secA{
+                height: 850px ;
+            }
+            .secB{
+                height: 850px ;
+            }
+            .secC{
+                height: 900px ;
+                cellspacing: "0";
+                cellpadding: "0";
+            }
+            .secD{
+                height: 500px ;
+            }
+            .header{
+                width:100%;
+                padding: 15px;
+                background: white;
+            }
+
+            /*Selecting elements with the id attribute*/
+            #firstCell{
+                background-color: lavender;
+            }
+
+            #secondCell {
+                background-color: orange;
+            }
+
+            #smallImg{
+                width: 50%;
+                /** These two lines align the image in the center **/
+                margin: auto;
+                display: block;
+            }
+
+            /*Selecting elements with the title attribute*/
+
+            [title~=smallImgDiv]{
+                background-color: lightyellow;
+            }
+
+            [title~=video]{
+                width:100%;
+            }
+
+
+            /*Selecting based off wildcard strings*/
+
+            [class*='col-'] { /* This css rule applies to any element that has the string "col-" in its class*/
+                float: left;
+                min-height: 1px;
+                /*-- our gutter inside each cell around it's content, change the value to see how it works--*/
+                padding: 10px;
+                border: 2px solid black;
+                /**********Another way to set background color: Change the number values in it and see what happens**********/
+                background: whitesmoke;
+                text-align: center;
+            }
+        </style>
+    </head>
+<body>
+<div class=" grid-container">
+    <div class="header">
+        <div class="row">
+            <div class="col-12" style="height:250px"><h2><u>Amazon’s Big Computing Typo Causes Problems</u></h2>
+                <p style="text-align: left;">Amazon reports that an incorrectly typed command during a routine debugging of its billing system caused a five-hour outage of some Amazon Web Services servers. The command was meant to remove a small number of servers for one of its S3 subsystems was wrongly entered and a larger set of servers was removed. Because of this, Amazon required a full restart which took longer than assumed.</p>
+                <p style="text-align: left;">Amazon representatives report that they are working on making changes in order to ensure that incorrect commands entered will not trigger an outage of its web services. Even though Amazon is known as an online retail store, Amazon has also ventured into many different avenues. They have the Echo, which is an artificial intelligence. Also Amazon is one of the world&rsquo;s largest provider of cloud services. Amazon hosts many companies&rsquo; computing functions on remote servers.&nbsp;</p>
+                <p><strong>Click <a href="http://www.nbcchicago.com/news/tech/Typo-Caused-Amazons-Big-Cloud-Computing-Outage--415277773.html">here</a> for more</strong></p>
+
+            </div>
+        </div>
+
+</body>
+</html>
