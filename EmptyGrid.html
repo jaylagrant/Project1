@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <style>
+
+        /*   * set's rules for the entire page    */
+        * {
+            box-sizing: border-box; /*This line makes sure the width and height are the correct sizes no matter the padding */
+            font-family: "Lucida Console", Monaco, monospace;
+        }
+
+        /*this is the CSS that styles a grid-container div, initially it's not being used. To use it create a new div with class="grid-container" and place all your rows and content inside it*/
+        .grid-container{
+            width: 100%;
+            max-width: 1260px;
+            margin:auto ;/* this line makes sure the container div is centered */
+        }
+
+        .row{
+            overflow:auto;
+            background-color: white;
+            margin: 0px
+        }
+
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 12.5%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+
+        .secA{
+            height: 500px ;
+        }
+        .secB{
+            height: 500px ;
+        }
+        .secC{
+            height: 500px ;
+            cellspacing: "0";
+            cellpadding: "0";
+        }
+        .secD{
+            height: 500px ;
+        }
+        .header{
+            width:100%;
+            padding: 15px;
+            background: white;
+        }
+
+
+        /*Selecting based off wildcard strings*/
+
+        [class*='col-'] { /* This css rule applies to any element that has the string "col-" in its class*/
+            float: left;
+            min-height: 1px;
+            /*-- our gutter inside each cell around it's content, change the value to see how it works--*/
+            padding: 10px;
+            border: .5px solid black;
+            /**********Another way to set background color: Change the number values in it and see what happens**********/
+            background: whitesmoke;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Empty Grid</title>
+</head>
+<body>
+<div class=" grid-container">
+    <div class="header">
+        <div class="row">
+            <div class="col-4" style="height:100px" ><h4></h4><p></p></div>
+            <div class="col-4" style="height:100px"><h1><br></h1></div>
+            <div class="col-4" style="height:100px"><p><h4></h4></p></div>
+        </div>
+        <div class="row">
+            <div class="col-2"><h3></h3></div>
+            <div class="col-2"><h3></h3></div>
+            <div class="col-2"><h3></h3></div>
+            <div class="col-2"><h3></h3></div>
+            <div class="col-2"><h3></h3></div>
+            <div class="col-2"><h3></h3></div>
+            <div class="col-2"><h3></h3></div>
+            <div class="col-2"><h3></h3></div>
+        </div>
+        <div class="row">
+            <div class="col-3 secA"><p></p></div>
+            <div class="col-9 secB"><strong></strong></div>
+            <div class="col-3 secC "><p></p></div>
+            <div class="col-9 secD"><strong></strong></div>
+        </div>
+
+
+
+</body>
+</html>
+</body>
+</html>
